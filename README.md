@@ -1,5 +1,5 @@
 # Yokai Watch 2 Psychic Specters Befriend Rate Calculator
-Access: https://swopis.github.io/YKW-Befriend-Calculator/
+Access: https://swopis.github.io/YW-Befriend-Calculator/
 
 ## How does Befriending work?
 ### Base probability
