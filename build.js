@@ -4,9 +4,9 @@ let tableData = `
 				<table cellpadding="10px">
 					<tr>
 						<th>
-							Yokai Name
+							Yokai Name / Befriend Count
 						</th>
-						<th>
+						<th class="advanced" hidden>
 							Difficulty Id
 						</th>
 					</tr>
@@ -16,7 +16,7 @@ let tableData = `
 							<br />
 							<input id="yk_count_%I" type="number" placeholder="Befriend Count" oninput="calculate(true)" />
 						</td>
-						<td>
+						<td class="advanced" hidden>
 							<input id="bef_id_%I" type="number" placeholder="Difficulty" oninput="calculate()" />
 							<br />
 							<input id="calc_bef_id_%I" type="button" value="Calculate Difficulty" onclick="calcDiff(%I)" />
@@ -82,4 +82,16 @@ fullHTML += `</tr>
 
 document.getElementById("data").innerHTML = fullHTML;
 
+let advanced = true;
+function toggleAdvanced() {
+	advanced = !advanced;
 
+	for (let e of document.getElementsByClassName("advanced")) {
+		e.hidden = !advanced;
+	}
+	let mode = advanced ? "less" : "more";
+	document.getElementById("advBtn").innerHTML = "Show " + mode + " options";
+
+}
+
+toggleAdvanced();
