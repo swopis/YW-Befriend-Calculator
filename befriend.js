@@ -230,7 +230,6 @@ const ykData = {
 	"Tengloom": [ 3, 4, 4, 5, 5, 6 ],
 	"Nird": [ 4, 5, 5, 6, 6, 7 ],
 	"Snobetty": [ 5, 5, 6, 6, 7, 8 ],
-	"Slimamander": [ 6, 7, 7, 7, 8, 8 ],
 	"Dracunyan": [ 5, 5, 6, 7, 7, 8 ],
 	"Negasus": [ 5, 5, 5, 6, 7, 8 ],
 	"Neighfarious": [ 6, 6, 6, 6, 7, 8 ],
@@ -314,7 +313,6 @@ const ykData = {
 	"Babblong": [ 3, 4, 4, 5, 6, 7 ],
 	"Bananose": [ 5, 5, 6, 6, 7, 8 ],
 	"Draaagin": [ 5, 6, 6, 6, 7, 7 ],
-	"SV Snaggerjag": [ 6, 7, 7, 7, 8, 8 ],
 	"Copperled": [ 3, 4, 4, 5, 6, 7 ],
 	"Cynake": [ 4, 5, 5, 5, 6, 7 ],
 	"Slitheref": [ 5, 6, 6, 7, 7, 8 ],
@@ -368,6 +366,23 @@ const ykData = {
 	"Whatuption": [ 6, 7, 7, 7, 8, 8 ],
 	"Happycane": [ 4, 6, 6, 7, 7, 8 ],
 	"Starrycane": [ 6, 7, 7, 7, 8, 8 ]
+	"Snottle": [ 3, 4, 5, 6, 7, 7 ],
+	"Moximous N": [ 5, 6, 6, 7, 8, 8 ],
+	"Moximous K": [ 5, 6, 6, 7, 8, 8 ], 
+	"Jibanyan S": [ 7, 8, 8, 8, 8, 8 ],
+	"Komasan S": [ 7, 8, 8, 8, 8, 8 ],
+	"Komajiro S": [ 7, 8, 8, 8, 8, 8 ],
+	"Darkyubi": [ 7, 8, 8, 8, 8, 8 ],
+	"Illuminoct": [ 7, 8, 8, 8, 8, 8 ]
+
+
+	// These yokai don't approach the player after battle. The befriend system could work differently.
+	//
+	//"Slimamander": [ 6, 7, 7, 7, 8, 8 ],
+	//"SV Snaggerjag": [ 6, 7, 7, 7, 8, 8 ],
+	//"Gargaros": [ 7, 8, 8, 8, 8, 8 ],
+	//"Ogralus": [ 7, 8, 8, 8, 8, 8 ],
+	//"Orcanos": [ 7, 8, 8, 8, 8, 8 ],
 };
 
 
