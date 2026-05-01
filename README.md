@@ -2,11 +2,15 @@
 Access: https://swopis.github.io/YW-Befriend-Calculator/
 
 ## How does Befriending work?
+The system explained below is only for yokai that approach the player after the battle. If the yokai is befriended in an event (i.e. Slimamander or Gargaros) the system works different
+(see [Random Event Befriends](#random-event-befriends)).
+
 ### Base probability
 The befriend rates depend entirely on the yokai's [friend rate descriptor](https://ykw-modding.github.io/yo-docs/modding-resources/param-ids/yw2-param-ids.html). Each friend rate descriptor consists of 4 bytes, while only the last 3 are used.
 
 Take for example Pandle. Pandle has the friend rate descriptor `0x00654331`. Each number represents a, let's call it difficulty id. If you currently have no pandle befriended the difficulty id will be `1`. 
-If you already have one, it will be `3`, then again `3`, then `4` and so on. Only the count of yokai you have **currently** befriended is used. If you turn all your yokai medals of that yokai into a soul, it counts has having none befriended.
+If you already have one, it will be `3`, then again `3`, then `4` and so on. Only the count of yokai you have **currently** befriended is used. If you turn all your yokai medals of that yokai into a soul, it counts has having none befriended.  
+[Type Rares](https://yokaiwatch.fandom.com/wiki/Rare_Yo-kai_(Yo-kai_Watch_2)) count as separate yokai. Having the normal yokai already befriended, does not influence the befriend rate of the rare one and vice versa.
 
 Using this difficulty id you can then determine the base probability of that yokai wanting to join you party. It will be
 
@@ -66,6 +70,27 @@ $$= (1 - 0.321) * (0.225 + 0.225 - 0.225*0.225)$$
 $$= 0.271 = 27.1\\%$$
 
 So the probability for befriending Pandle in this example will be 27.1%. 
+
+### Random Event Befriends
+Some yokai are given to the player in an event and not like most yokai with "[yokai] approaches you". Some of these befriends are also randomly decided.  
+This system however works differently than the one explained above. The befriend chance is hardcoded into a [CExpression](https://github.com/n123git/yw-cond/)
+and only depends on how often that yokai is already befriended (if it can be befriended more than one time)  
+The probabilities are:  
+
+| Yokai Name    | Befriend Count | Probability |
+|---------------|----------------|-------------|
+| SV Snaggerjag | -              | 7.5%        |
+| Slimamander   | -              | 7.5%        |
+| Gargaros      | 0              | 5%          |
+|               | 1              | 2.5%        |
+|               | 2              | 1.2%        |
+| Ogralus       | 0              | 5%          |
+|               | 1              | 2.5%        |
+|               | >=2            | 1.2%        |
+| Orcanos       | 0              | 3%          |
+|               | 1              | 1.5%        |
+|               | >=2            | 0.8%        |
+
 
 ### Other important notes
 * Generally befriending a specific yokai becomes harder if you've already befirended them.
