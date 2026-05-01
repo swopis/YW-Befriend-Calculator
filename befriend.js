@@ -365,7 +365,7 @@ const ykData = {
 	"Whateverest": [ 4, 6, 6, 7, 7, 8 ],
 	"Whatuption": [ 6, 7, 7, 7, 8, 8 ],
 	"Happycane": [ 4, 6, 6, 7, 7, 8 ],
-	"Starrycane": [ 6, 7, 7, 7, 8, 8 ]
+	"Starrycane": [ 6, 7, 7, 7, 8, 8 ],
 	"Snottle": [ 3, 4, 5, 6, 7, 7 ],
 	"Moximous N": [ 5, 6, 6, 7, 8, 8 ],
 	"Moximous K": [ 5, 6, 6, 7, 8, 8 ], 
