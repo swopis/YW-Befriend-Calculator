@@ -4,7 +4,7 @@ let tableData = `
 				<table cellpadding="10px">
 					<tr>
 						<th>
-							Yokai Name / Befriend Count
+							Yo-Kai Name / Befriend Count
 						</th>
 						<th class="advanced" hidden>
 							Difficulty Id
@@ -12,7 +12,7 @@ let tableData = `
 					</tr>
 					<tr>
 						<td align="center">
-							<input id="yk_name_%I" placeholder="Yokai Name" list="yks" oninput="calculate(true, true)"  />
+							<input id="yk_name_%I" placeholder="Yo-Kai Name" list="yks" oninput="calculate(true, true)"  />
 							<br />
 							<input id="yk_count_%I" type="number" placeholder="Befriend Count" oninput="calculate(true)" />
 						</td>
@@ -57,9 +57,9 @@ let tableData = `
 let fullHTML = `
 	<table>
 		<tr>
-			<th>Yokai 1</th>
-			<th>Yokai 2</th>
-			<th>Yokai 3</th>
+			<th>Yo-Kai 1</th>
+			<th>Yo-Kai 2</th>
+			<th>Yo-Kai 3</th>
 		</tr>
 		<tr>
 `;
@@ -72,7 +72,7 @@ fullHTML += `</tr>
 			<h3 id="result_1">Partial Probability: 0.00%</h3>
 		</td>
 		<td>
-			<h3 id="result_2">Partial Probability: 0.00%<h3>
+			<h3 id="result_2">Partial Probability: 0.00%</h3>
 		</td>
 		<td>
 			<h3 id="result_3">Partial Probability: 0.00%</h3>
