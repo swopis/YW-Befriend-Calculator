@@ -20,7 +20,7 @@ After calculating the base chance, the bonuses the player can influence are _add
 * Yo-Kai blaster bonus
 * superstar soul/popularity skill
 * unpopularity skill
-* whisp bonus
+* wisp bonus
 * shrine bonus (1%)
 * aura bonus
 
@@ -72,17 +72,17 @@ For example, a difficulty 9 Yo-Kai with max blaster level will get a $100 * 0.03
 | 8          | 1%                          | -0.1%        |
 | 9          | 1%                          | -0.05%       |
 
-#### Whisps
-| Difficulty | Blue Whisp | Golden Whisp |
-|------------|------------|--------------|
-| 2          | 15%        | 37.5%        |
-| 3          | 8%         | 21%          |
-| 4          | 6%         | 15%          |
-| 5          | 5%         | 10.5%        |
-| 6          | 4%         | 9%           |
-| 7          | 3%         | 7.5%         |
-| 8          | 2%         | 6%           |
-| 9          | 1%         | 4.5%         |
+#### Wisps
+| Difficulty | Blue Wisp | Golden Wisp |
+|------------|-----------|-------------|
+| 2          | 15%       | 37.5%       |
+| 3          | 8%        | 21%         |
+| 4          | 6%        | 15%         |
+| 5          | 5%        | 10.5%       |
+| 6          | 4%        | 9%          |
+| 7          | 3%        | 7.5%        |
+| 8          | 2%        | 6%          |
+| 9          | 1%        | 4.5%        |
 
 #### What is the shrine bonus?
 Sometimes after you have put your 1$ into the shrine in Mt. Wildwood, you get the message: "I have a feeling that I've got a lot more friends now.".
@@ -126,8 +126,8 @@ CHARA_FRIEND_RATE_INFO (
     Tier4Bonus|False
     Popularity|False
     Unpopularity|False
-    BlueWhisp|False
-    GoldenWhisp|False
+    BlueWisp|False
+    GoldenWisp|False
     BlasterFactor|False
     ShrineBonus|False
     Unk1|False

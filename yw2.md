@@ -17,7 +17,7 @@ After calculating the base chance, the bonuses the player can influence are adde
 * befriend poke (10%)
 * superstar soul/popularity skill
 * unpopularity skill
-* whisp bonus (10% or 100%)
+* wisp bonus (10% or 100%)
 * shrine bonus (1%)
 
 > [!NOTE]
@@ -44,7 +44,7 @@ After this message every Yo-Kai has a 1% higher chance of approaching you after 
 
 ### Full Example
 You are playing against Undy and two Pandles and haven't befriended anyone of them. The base probability for befriending Undy will be 1:64 or about 1.6%, for befriending each Pandle the probability
-will be 1:8 or 12.5%. If you now give Undy his favourite tier 4 food this probability gets increased: 1.6% + 1.5*7% = 1.6% + 10.5% = 12.1%. Now you also poke him: 12.1% + 10% = 22.1%. And you get a blue whisp with one heart: both Pandle's chances get increased: 12.5% + 10% = 22.5%. And Undy's chance also: 22.1% + 10% = 32.1%. 
+will be 1:8 or 12.5%. If you now give Undy his favourite tier 4 food this probability gets increased: 1.6% + 1.5*7% = 1.6% + 10.5% = 12.1%. Now you also poke him: 12.1% + 10% = 22.1%. And you get a blue wisp with one heart: both Pandle's chances get increased: 12.5% + 10% = 22.5%. And Undy's chance also: 22.1% + 10% = 32.1%. 
 
 As the fight now ends these probabilities are applied for each Yo-Kai separately. If you want to know the chance you will get Undy, it will just be the calculated 32.1%, because he has a higher difficulty. If however you want to calculate the chance of befriending Pandle in this example, the calculation becomes a bit more complicated. You have to calculate the probability that Undy will not get selected and at least one of the Pandles will:
 
@@ -64,7 +64,7 @@ This system however works differently than the one explained above. The befriend
 and only depends on how often that Yo-Kai is already befriended (if it can be befriended more than one time)  
 The probabilities are:  
 
-| Yokai Name    | Befriend Count | Probability |
+| Yo-Kai        | Befriend Count | Probability |
 |---------------|----------------|-------------|
 | SV Snaggerjag | -              | 7.5%        |
 | Slimamander   | -              | 7.5%        |
@@ -82,7 +82,7 @@ The probabilities are:
 * Generally befriending a specific Yo-Kai becomes harder if you've already befriended them.
 * It is impossible to befriend a Yo-Kai after a battle if you already befriended 6 of them.
 * Sometimes it can be better to give the Yo-Kai a tier 4 non-favorite food instead of a tier 1 favorite food.
-* If you get a golden whisp with 3 hearts, the Yo-Kai with the highest difficulty as last digit will always become your friend.
+* If you get a golden wisp with 3 hearts, the Yo-Kai with the highest difficulty as last digit will always become your friend.
 * If you are facing multiple of the same Yo-Kai, giving each of them separately a food item and poking each of them separately increases the odds of befriending them. 
 * While Type-Rare Yo-Kai always have the same befriend probabilities as their non-rare counterpart, they count as separate Yo-Kai.
 
@@ -97,8 +97,8 @@ CHARA_FRIEND_RATE_INFO (
 		FoodTier4|False
 		Popularity|False
 		Unpopularity|False
-		BlueWhisp|False
-		GoldenWhisp|False
+		BlueWisp|False
+		GoldenWisp|False
 		BefriendPoke|False
 		ShrineBonus|False
 )
