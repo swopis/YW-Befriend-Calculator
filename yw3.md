@@ -4,7 +4,7 @@ Access: https://swopis.github.io/YW-Befriend-Calculator/yw3/
 > This section is not finished. It may contain errors or miss information.
 
 ## How does Befriending work?
-Make sure to first read the [Common Starting Point](README.md#common-starting-point).  
+Make sure to first read how to [Calculate the Difficulty](README.md#calculating-the-difficulty).  
 The resulting number will be referenced as `difficulty`
 
 ### Base Probability
@@ -84,6 +84,9 @@ For example, a difficulty 9 Yo-Kai with max blaster level will get a $100 * 0.03
 | 8          | 2%        | 6%          |
 | 9          | 1%        | 4.5%        |
 
+> [!WARNING]
+> Contrary to Yo-Kai Watch 1 and 2, the golden wisp with 3 hearts no longer guarantees a befriend.
+
 #### What is the shrine bonus?
 Sometimes after you have put your 1$ into the shrine in Mt. Wildwood, you get the message: "I have a feeling that I've got a lot more friends now.".
 After this message every Yo-Kai has a 1% higher chance of approaching you after a battle for one day.
@@ -115,7 +118,7 @@ Then the bonus depends on aura tier and difficulty.
 
 If the aura Enma or Enma EX is active and the enemy Yo-Kai has the tribe Enma, the Yo-Kai will always get selected.
 
-## Modding opportunities
+## Modding Opportunities
 The befriend bonuses are all stored in the chara param file:
 ```
 CHARA_FRIEND_RATE_INFO (

@@ -1,7 +1,7 @@
 Access: https://swopis.github.io/YW-Befriend-Calculator/yw2/
 
 ## How does Befriending work?
-Make sure to first read the [Common Starting Point](README.md#common-starting-point).  
+Make sure to first read how to [Calculate the Difficulty](README.md#calculating-the-difficulty).  
 The resulting number will be referenced as `difficulty`
 
 ### Base Probability
@@ -37,6 +37,9 @@ After calculating the base chance, the bonuses the player can influence are adde
 
 If the given food was the Yo-Kai's favorite food the value gets multiplied by 1.5. If it was the Yo-Kai's hated food it gets multiplied by 0.4.
 For example, if you gave a tier 4 favorite food at difficulty 1 the bonus will be 37.5% instead of 25%.
+
+#### Wisps
+A blue wisp with one heart gives a 10% bonus, a golden wisp with three hearts guarantees this Yo-Kai to get selected.
 
 #### What is the shrine bonus?
 Sometimes after you have put your 1$ into the shrine in Mt. Wildwood, you get the message: "I have a feeling that I've got a lot more friends now.".
@@ -86,7 +89,7 @@ The probabilities are:
 * If you are facing multiple of the same Yo-Kai, giving each of them separately a food item and poking each of them separately increases the odds of befriending them. 
 * While Type-Rare Yo-Kai always have the same befriend probabilities as their non-rare counterpart, they count as separate Yo-Kai.
 
-## Modding opportunities
+## Modding Opportunities
 The befriend bonuses are all stored in the chara param file:
 ```
 CHARA_FRIEND_RATE_INFO (
