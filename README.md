@@ -2,7 +2,7 @@
 Access: https://swopis.github.io/YW-Befriend-Calculator/
 
 > [!NOTE]
-> This guide only covers befriends that happen after a battle with "Yo-Kai is approaching you."
+> This guide only covers befriends that happen after a battle with "Yo-Kai is approaching you" and Blasters T in Yo-Kai Watch 3.
 
 ## Calculating the Difficulty
 In Yo-Kai Watch 1, 2 and 3 each Yo-Kai gets assigned a 4-byte-descriptor that determines it's befriend rates.  
