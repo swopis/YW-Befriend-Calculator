@@ -41,3 +41,32 @@ If there are still multiple Yo-Kai selected, the befriending Yo-Kai will be dete
 ## Bit-Flags
 * `0x0CC4EC4E`: always 0% befriend probability
 * `0xABCB4EE6`: always 100% befriend probability
+
+## Modding: Custom Base Probability Battle Rule
+In each game, there is a battle rule to specify a custom base probability for a specific battle.  
+To create this battle rule, duplicate a `BTL_RULE_INFO_RULE_DATA` entry and put `3` in the first variable, `5` in the 13th variable and the custom probability (in percent) in the 14th variable.
+All the other variables can be set to zero. This battle rule can also be used to forbid befriending. Due to the game's logic only the following percentages are possible:
+
+| Value Range | Resulting Percentage |
+|-------------|----------------------|
+| 0           | 0%                   |
+| 1           | 1%                   |
+| 2           | 2%                   |
+| 3           | 3%                   |
+| 4           | 4%                   |
+| 5           | 5%                   |
+| 6           | 6.25%                |
+| 7           | 7.14%                |
+| 8           | 8.33%                |
+| 9           | 9.09%                |
+| 10          | 10%                  |
+| 11          | 11.11%               |
+| 12          | 12.50%               |
+| 13-14       | 14.29%               |
+| 15-16       | 16.67%               |
+| 17-20       | 20%                  |
+| 21-26       | 25%                  |
+| 27-33       | 33%                  |
+| 34-50       | 50%                  |
+| 51-100      | 100%                 |
+| >100        | 0%                   |
